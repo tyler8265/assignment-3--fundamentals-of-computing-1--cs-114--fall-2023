@@ -29,6 +29,7 @@ public class Matrix {
       for(int j = 0; j < matrix.length; j++)
         System.out.print(matrix[i][j] + "\t");
     }
+    System.out.println();
   }
 
   public static void populateMatrix() {
