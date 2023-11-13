@@ -38,12 +38,15 @@ public class Matrix {
 
     size = (matrix.length * matrix.length);
     do {
-        for (int x = 0; x < matrix.length; x++){
+      for (int x = 0; x < matrix.length; x++){
         matrix[rows][columns] = value++;
         columns++;
       }
       rows++;
-    } while (rows < matrix.length);
+      columns = 0;
+    }
+    while (rows < matrix.length);
+
     for(int i = 0; i < matrix.length; i++){
       System.out.println();
       for(int j = 0; j < matrix.length; j++)
