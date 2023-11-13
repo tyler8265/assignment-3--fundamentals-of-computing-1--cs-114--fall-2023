@@ -27,7 +27,7 @@ public class Matrix {
     rows = 0;
     columns = matrix.length - 1;
     for(int i = 0; i < matrix.length; i++){
-      matrix[rows][columns] = 
+      matrix[rows][columns] = 1;
       rows++;
       columns--;
     }
