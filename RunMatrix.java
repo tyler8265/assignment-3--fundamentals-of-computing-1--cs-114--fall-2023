@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class RunMatrix {
   public static void main(String[] args) {
-    Matrix runMatrix = new Matrix();
-
+    Matrix.matrix();
+    Matrix.printMatrix();
+    Matrix.populateMatrix();
   }
 }
