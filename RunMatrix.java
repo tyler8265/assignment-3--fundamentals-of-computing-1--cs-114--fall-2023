@@ -5,5 +5,6 @@ public class RunMatrix {
     Matrix.matrix();
     Matrix.printMatrix();
     Matrix.populateMatrix();
+    Matrix.flipMatrix();
   }
 }
