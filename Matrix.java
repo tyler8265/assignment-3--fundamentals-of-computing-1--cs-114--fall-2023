@@ -1,9 +1,8 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Matrix {
   private static int[][] matrix = new int[0][0];
-  private static int size, value, rows, columns, keepSame;
+  private static int value, rows, columns;
 
   public static void matrix() {
     Scanner scan = new Scanner(System.in);
@@ -57,12 +56,11 @@ public class Matrix {
     System.out.println();
     System.out.println("Printing matrix: ");
 
-    size = (matrix.length * matrix.length);
     rows = 0;
     columns = 0;
     do {
       for (int i = 0; i < matrix.length; i++){
-        matrix[rows][columns] = value++;
+        matrix[rows][columns] = ++value;
         columns++;
       }
       rows++;
