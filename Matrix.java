@@ -9,6 +9,7 @@ public class Matrix {
 
     System.out.print("Please enter the size of your matrix: ");
     int size = scan.nextInt();
+    scan.close();
 
     System.out.println();
     System.out.println("Your matrix is " + size + " x " + size);
