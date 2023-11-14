@@ -19,6 +19,9 @@ public class Matrix {
   }
 
   private static void swap(int[][] matrix, int x1, int x2, int y1, int y2) {
+    if (x1 + y1 == matrix.length - 1 || x2 + y2 == matrix.length - 1){
+      return;
+    }
     int tempArray = matrix[x1][y1];
     matrix[x1][y1] = matrix[x2][y2];
     matrix[x2][y2] = tempArray;
@@ -89,20 +92,11 @@ public class Matrix {
     int input = matrix.length - 1;
     do {
       for (int i = 0; i < matrix.length; i++){
-        if (){
           swap(matrix, x1, input, i, matrix.length - 1 - i);
-        }
-        else{
-          ;
-        }
       }
       x1++;
       input--;
     } while (x1 < matrix.length / 2);
-
-    for (int i = 0; i < matrix.length; i++) {
-      swap(matrix, i, matrix.length - 1, matrix.length - 1, (matrix.length - matrix.length) + i);
-    }
 
     for(int i = 0; i < matrix.length; i++){
       System.out.println();
@@ -114,7 +108,7 @@ public class Matrix {
           System.out.print(matrix[i][j] + "\t");
         }
       }
-  }
+    }
 
-}
+  }
 }
