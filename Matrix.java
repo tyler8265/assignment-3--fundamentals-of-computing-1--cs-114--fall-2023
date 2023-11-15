@@ -30,6 +30,7 @@ public class Matrix {
   public static void printMatrix() {
     rows = 0;
     columns = matrix.length - 1;
+
     for(int i = 0; i < matrix.length; i++){
       matrix[rows][columns] = 0;
       rows++;
@@ -59,7 +60,9 @@ public class Matrix {
 
     rows = 0;
     columns = 0;
+
     //DoWhile loop increments the "value" variable which populates the indexes with the correct numbers for the matrix.
+
     do {
       for (int i = 0; i < matrix.length; i++){
         matrix[rows][columns] = ++value;
@@ -88,9 +91,11 @@ public class Matrix {
     System.out.println("Flipping matrix...matrix flipped");
     System.out.println();
     System.out.println("Printing flipped matrix: ");
+    
     rows = 0;
     columns = matrix.length - 1;
-    //This DoWhile loop uses the swap function to swaps
+
+    //This DoWhile loop uses the calls the swap function
     do {
       for (int i = 0; i < matrix.length; i++){
           swap(matrix, rows, columns, i, matrix.length - 1 - i);
