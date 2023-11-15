@@ -87,15 +87,15 @@ public class Matrix {
     System.out.println("Flipping matrix...matrix flipped");
     System.out.println();
     System.out.println("Printing flipped matrix: ");
-    int x1 = 0;
-    int input = matrix.length - 1;
+    rows = 0;
+    columns = matrix.length - 1;
     do {
       for (int i = 0; i < matrix.length; i++){
-          swap(matrix, x1, input, i, matrix.length - 1 - i);
+          swap(matrix, rows, columns, i, matrix.length - 1 - i);
       }
-      x1++;
-      input--;
-    } while (x1 < matrix.length / 2);
+      rows++;
+      columns--;
+    } while (rows < matrix.length / 2);
 
     for(int i = 0; i < matrix.length; i++){
       System.out.println();
@@ -108,6 +108,5 @@ public class Matrix {
         }
       }
     }
-
   }
 }
